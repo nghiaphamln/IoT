@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C2196F3"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phần mềm điều khiển phòng tự học"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:gravity="center|center_horizontal"
+        android:orientation="vertical">
+
+        <ToggleButton
+            android:id="@+id/tgLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:text="ToggleButton"
+            android:textColor="@color/white"
+            android:textOff="Bật đèn"
+            android:textOn="Tắt đèn" />
+
+        <ToggleButton
+            android:id="@+id/tgFan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:background="#3F51B5"
+            android:text="ToggleButton"
+            android:textColor="@color/white"
+            android:textOff="Bật quạt"
+            android:textOn="Tắt quạt" />
+
+        <ToggleButton
+            android:id="@+id/tgDoor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:background="#2196F3"
+            android:text="ToggleButton"
+            android:textColor="@color/white"
+            android:textOff="Mở cửa"
+            android:textOn="Đóng cửa" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/light_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xem trạng thái" />
+</LinearLayout>
