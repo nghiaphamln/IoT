@@ -9,7 +9,7 @@ serrect_key = os.getenv('secret_key')
 authen_token = 'Bearer ' + hashlib.sha256(serrect_key.encode('utf-8')).hexdigest()
 light_status = False  # false is turn off, true is turn on
 fan_status = False  # false is turn off, true is turn on
-door_status = 0  # 10 level, 0 is close, 10 is open
+door_status = 0  # 180 is close, 30 is open
 print('Authentication Token:', authen_token)
 
 
